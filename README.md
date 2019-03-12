@@ -2,8 +2,6 @@ A small app for exploring idols with similar faces.
 
 The faces are compared using the Facenet implementation from [github.com/davidsandberg/facenet](https://github.com/davidsandberg/facenet).
 
-I plan to add a small writeup here with more details soon.
-
 ## Try it yourself
 
 Download model [20180402-114759](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-).
