@@ -14,10 +14,10 @@ h2 {
   text-align: center;
 }
 
-.author a:link,
-.author a:visited,
-.author a:hover,
-.author a:active {
+a.author:link,
+a.author:visited,
+a.author:hover,
+a.author:active {
   color: blue;
   display: block;
   text-align: center;
