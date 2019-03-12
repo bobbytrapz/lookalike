@@ -1,0 +1,17 @@
+# developer notes
+*.notes
+
+# tools
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+venv/
+ENV/
+
+# ml
+models

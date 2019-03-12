@@ -1,0 +1,72 @@
+body {
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: #0078ff;
+}
+
+h1 {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  text-align: center;
+}
+
+.author a:link,
+.author a:visited,
+.author a:hover,
+.author a:active {
+  color: blue;
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.search {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+img.face {
+  width: 192px;
+  height: 192px;
+}
+
+.name {
+  text-align: center;
+  font-size: 12px;
+}
+
+.similarity {
+  text-align: center;
+  font-size: 24px;
+  color: orange;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show-all > .idols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-one > .idols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-two > .idols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
