@@ -207,6 +207,8 @@ const draw = (mode, data) => {
     case "show-all":
       {
         const idols = [];
+        const search = document.querySelector(".search");
+        data = filter(search.value);
         for (const [name, idol] of Object.entries(data)) {
           idols.push(idol);
         }
@@ -247,9 +249,13 @@ document.querySelector(".title").onclick = () => {
   change("show-all", window.DATA);
 };
 
-document.querySelector(".search").addEventListener("input", ev => {
-  let q = ev.target.value.toUpperCase();
+const filter = q => {
+  if (q === "") {
+    return window.DATA;
+  }
+
   q = q
+    .toUpperCase()
     .replace("４", "4")
     .replace("６", "6")
     .replace("８", "8");
@@ -260,5 +266,10 @@ document.querySelector(".search").addEventListener("input", ev => {
       found[name] = idol;
     }
   }
+  return found;
+};
+
+document.querySelector(".search").addEventListener("input", ev => {
+  const found = filter(ev.target.value);
   change("show-all", found);
 });
