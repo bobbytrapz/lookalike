@@ -232,7 +232,7 @@ const draw = (mode, data) => {
 
 // load data
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/lookalike.json")
+  fetch("lookalike.json")
     .then(res => res.json())
     .then(data => {
       window.DATA = data;
