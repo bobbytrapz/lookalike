@@ -262,7 +262,7 @@ const filter = q => {
   const found = {};
   for (const [name, idol] of Object.entries(window.DATA)) {
     const g = idol["group"].toUpperCase();
-    if (name.toUpperCase().startsWith(q) || g.startsWith(q)) {
+    if (name.toUpperCase().includes(q) || g.includes(q)) {
       found[name] = idol;
     }
   }
